@@ -12,7 +12,7 @@ function Hero() {
               Hi, I'm <span>Diva Arya</span>
             </h1>
 
-            <h3>Backend Developer Enthusiast</h3>
+            <h3>Backend Developer</h3>
 
             <p>
               Saya merupakan siswa <b>SMK Raden Umar Said</b> jurusan

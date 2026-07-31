@@ -1,3 +1,5 @@
+import Foto from "../assets/img/coding.jpg";
+
 function About() {
   return (
     <section id="about" className="py-5 bg-light">
@@ -6,7 +8,7 @@ function About() {
         <div className="text-center mb-5">
           <h2 className="fw-bold">About Me</h2>
           <p className="text-secondary">
-            Perkenalan singkat mengenai diri saya.
+            Mengenal lebih dekat tentang saya.
           </p>
         </div>
 
@@ -15,7 +17,7 @@ function About() {
           <div className="col-lg-5 text-center">
 
             <img
-              src="src/assets/img/coding.jpg"
+              src={Foto}
               alt="Diva Arya Prasetya Alamsyah Sujatmica"
               className="img-fluid rounded-4 shadow"
             />
@@ -25,26 +27,28 @@ function About() {
           <div className="col-lg-7">
 
             <h3 className="fw-bold mb-3">
-              Backend Developer Enthusiast
+              Backend Developer
             </h3>
 
             <p>
-              Halo! Saya <b>Diva Arya Prasetya Alamsyah Sujatmica</b>, siswa
-              <b> SMK Raden Umar Said</b> jurusan
+              Halo! Saya <b>Diva Arya Prasetya Alamsyah Sujatmica</b>,
+              siswa <b>SMK Raden Umar Said</b> jurusan
               <b> Rekayasa Perangkat Lunak (RPL)</b>.
             </p>
 
             <p>
-              Saya memiliki minat dalam pengembangan aplikasi
-              berbasis web, khususnya pada sisi backend
-              menggunakan Laravel, PHP, dan MySQL.
+              Saya memiliki minat dalam pengembangan aplikasi berbasis web,
+              khususnya pada pengembangan <b>backend</b> menggunakan
+              <b> PHP, Laravel, dan MySQL</b>. Saya senang membangun aplikasi
+              yang terstruktur, mudah dikembangkan, dan memiliki performa yang baik.
             </p>
 
             <p>
-              Saya merupakan pribadi yang suka belajar hal baru,
-              mudah beradaptasi, bertanggung jawab,
-              serta senang bekerja sama dalam tim untuk
-              menghasilkan aplikasi yang bermanfaat.
+              Saya adalah pribadi yang disiplin, cepat belajar, mudah
+              beradaptasi, serta mampu bekerja sama dalam tim maupun secara
+              mandiri. Saya selalu berusaha meningkatkan kemampuan dengan
+              mempelajari teknologi baru dan mengerjakan berbagai proyek
+              pengembangan web.
             </p>
 
           </div>
