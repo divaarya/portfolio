@@ -1,25 +1,30 @@
+import Absensi from "../assets/img/absensi.jpeg";
+import Managemen from "../assets/img/managemen.jpeg";
+import Kalkulator from "../assets/img/kalkulator.jpeg";
+
 function Projects() {
+
   const projects = [
     {
       title: "Sistem Absensi Siswa",
       description:
         "Website untuk mengelola data kehadiran siswa, status absensi, dan rekap laporan secara efisien.",
       tech: ["Laravel", "PHP", "MySQL"],
-      image: "src/assets/img/absensi.jpeg",
+      image: Absensi,
     },
     {
       title: "Aplikasi Manajemen",
       description:
         "Website untuk mengelola data pengguna, laporan, dan proses administrasi.",
       tech: ["Laravel", "PHP", "Bootstrap"],
-      image: "src/assets/img/managemen.jpeg",
+      image: Managemen,
     },
     {
       title: "Kalkulator",
       description:
         "Aplikasi kalkulator sederhana dengan operasi penjumlahan, pengurangan, perkalian, dan pembagian.",
       tech: ["HTML", "CSS", "JavaScript"],
-      image: "src/assets/img/kalkulator.jpeg",
+      image: Kalkulator,
     },
   ];
 
@@ -35,14 +40,16 @@ function Projects() {
         </div>
 
         <div className="row g-4">
+
           {projects.map((project, index) => (
             <div className="col-lg-4" key={index}>
+
               <div className="card project-card h-100">
 
                 <img
                   src={project.image}
-                  className="card-img-top"
                   alt={project.title}
+                  className="card-img-top"
                 />
 
                 <div className="card-body">
@@ -54,8 +61,8 @@ function Projects() {
                   <div className="mb-3">
                     {project.tech.map((tech, i) => (
                       <span
-                        className="badge bg-primary me-2"
                         key={i}
+                        className="badge bg-primary me-2"
                       >
                         {tech}
                       </span>
@@ -65,8 +72,10 @@ function Projects() {
                 </div>
 
               </div>
+
             </div>
           ))}
+
         </div>
 
       </div>

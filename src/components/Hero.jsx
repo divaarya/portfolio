@@ -1,3 +1,5 @@
+import Foto from "../assets/img/aku.jpg";
+
 function Hero() {
   return (
     <section id="home" className="hero">
@@ -13,13 +15,12 @@ function Hero() {
             <h3>Backend Developer Enthusiast</h3>
 
             <p>
-              Saya merupakan siswa <b>SMK Raden Umar Said </b>
-              jurusan <b>Rekayasa Perangkat Lunak (RPL)</b>.
-              Saya memiliki minat dalam pengembangan aplikasi
-              berbasis web, khususnya pada sisi backend menggunakan
-              <b> PHP, Laravel, MySQL</b>, serta senang mempelajari
-              teknologi baru untuk membangun aplikasi yang rapi,
-              efisien, dan mudah dikembangkan.
+              Saya merupakan siswa <b>SMK Raden Umar Said</b> jurusan
+              <b> Rekayasa Perangkat Lunak (RPL)</b>. Saya memiliki minat
+              dalam pengembangan aplikasi berbasis web, khususnya backend
+              menggunakan <b>PHP, Laravel, MySQL</b>, serta senang
+              mempelajari teknologi baru untuk membangun aplikasi yang
+              rapi, efisien, dan mudah dikembangkan.
             </p>
 
             <a href="#projects" className="btn btn-primary me-3">
@@ -35,8 +36,8 @@ function Hero() {
           <div className="col-lg-6 text-center">
 
             <img
-              src="src/assets/img/aku.jpg"
-              alt="Diva Arya Prasetya Alamsyah Sujatmica"
+              src={Foto}
+              alt="Diva Arya"
               className="img-fluid rounded-circle shadow hero-img"
             />
 

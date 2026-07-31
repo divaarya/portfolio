@@ -12,7 +12,7 @@ function Contact() {
 
         <p className="text-secondary mb-5">
           Terima kasih telah mengunjungi portfolio saya.
-          Jangan ragu untuk menghubungi saya.
+          Jika ingin berdiskusi, memberikan masukan, atau mengetahui lebih lanjut mengenai project yang saya kerjakan, silakan hubungi saya.
         </p>
 
         <div className="d-flex justify-content-center gap-3 flex-wrap">
