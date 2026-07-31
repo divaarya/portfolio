@@ -1,0 +1,419 @@
+/* =========================
+   Global
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    color:#1f2937;
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at top right,#dbeafe 0%,transparent 30%),
+    radial-gradient(circle at bottom left,#bfdbfe 0%,transparent 35%),
+    #f8fafc;
+}
+
+section{
+    position:relative;
+    padding:75px 0;
+}
+
+/* background setiap section */
+section::before{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:#3b82f6;
+    filter:blur(140px);
+    opacity:.06;
+    top:-100px;
+    right:-100px;
+    z-index:0;
+}
+
+section:nth-child(even)::before{
+    left:-100px;
+    right:auto;
+    background:#60a5fa;
+}
+
+.container{
+    position:relative;
+    z-index:2;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:700;
+    color:#111827;
+}
+
+p{
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.section-title{
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.section-title h2{
+    font-size:42px;
+}
+
+.section-title p{
+    margin-top:10px;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    background:rgba(255,255,255,.9);
+    backdrop-filter:blur(10px);
+    box-shadow:0 3px 15px rgba(0,0,0,.06);
+    padding:14px 0;
+}
+
+.navbar-brand{ font-size:22px; font-weight:700; max-width:420px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+.nav-link{
+    margin-left:18px;
+    font-weight:600;
+    color:#444 !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#2563eb !important;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#f8fbff,#eef5ff);
+    overflow:hidden;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.15;
+    max-width:600px;
+}
+
+.hero span{
+    color:#2563eb;
+}
+
+.hero h3{
+    margin:18px 0;
+    font-size:28px;
+}
+
+.hero p{
+    max-width:540px;
+    font-size:17px;
+}
+
+.hero-img{
+    width:340px;
+    border-radius:50%;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.hero-img:hover{
+    transform:translateY(-8px);
+}
+
+/* =========================
+   About
+========================= */
+
+#about{
+    padding-top:40px;
+}
+
+#about .row{
+    background:white;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+#about img{
+    width:280px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+#about h3{
+    font-size:36px;
+}
+
+#about p{
+    font-size:17px;
+}
+
+/* =========================
+   Skills
+========================= */
+
+.skill-card{
+    background:white;
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,.15);
+}
+
+.skill-icon{
+    font-size:55px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+/* =========================
+   Projects
+========================= */
+
+.project-card{
+    background:#fff;
+    border:none;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+    height:100%;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+}
+
+.project-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    object-position:top center;
+    display:block;
+}
+
+.project-card .card-body{
+    padding:25px;
+}
+
+.project-card .btn{
+    display:none;
+}
+
+.project-card h4{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    color:#6b7280;
+    margin-bottom:20px;
+    line-height:1.7;
+}
+
+
+/* =========================
+   Education
+========================= */
+
+#education{
+    padding-top:60px;
+}
+
+.education-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border:1px solid #e5e7eb;
+
+    transition:.35s;
+}
+
+.education-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 45px rgba(37,99,235,.15);
+
+}
+
+.education-year{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:7px 18px;
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+}
+
+.education-card h3{
+
+    font-size:34px;
+
+}
+
+.education-card h5{
+
+    color:#2563eb;
+
+    margin:10px 0 18px;
+
+}
+
+.education-card p{
+
+    color:#555;
+
+}
+
+.education-card li{
+
+    color:#555;
+
+    margin-bottom:10px;
+
+}
+
+/* =========================
+   Contact
+========================= */
+
+.contact-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contact-icon{
+
+    font-size:34px;
+
+    color:#2563eb;
+
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer{
+    margin-top:40px;
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px 0;
+}
+
+.footer p{
+    color:white;
+    margin:0;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+    min-height:auto;
+    padding-top:120px;
+}
+
+.hero-img{
+    width:270px;
+    margin-top:40px;
+}
+
+.hero p{
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.nav-link{
+    margin-left:0;
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+    padding:45px 0;
+}
+
+.section-title h2{
+    font-size:35px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero-img{
+    width:220px;
+}
+
+.project-card img{
+    height:180px;
+}
+
+}
