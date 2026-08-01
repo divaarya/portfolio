@@ -22,7 +22,7 @@ function Education() {
               <h5>Rekayasa Perangkat Lunak (RPL)</h5>
 
               <div className="education-year">
-                2023 - Sekarang
+                2024 - Sekarang
               </div>
 
               <p>

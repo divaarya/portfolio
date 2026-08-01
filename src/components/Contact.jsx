@@ -11,7 +11,7 @@ function Contact() {
         </h2>
 
         <p className="text-secondary mb-5">
-          Terima kasih telah mengunjungi portfolio saya.
+          Terima kasih telah mengunjungi portofolio saya.
           Jika ingin berdiskusi, memberikan masukan, atau mengetahui lebih lanjut mengenai project yang saya kerjakan, silakan hubungi saya.
         </p>
 
