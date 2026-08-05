@@ -1,4 +1,5 @@
 import Foto from "../assets/img/aku.jpg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (

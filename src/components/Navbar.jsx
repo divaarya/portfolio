@@ -47,15 +47,6 @@ function Navbar() {
 
           </ul>
 
-          <a
-            href="https://github.com/divaarya"
-            target="_blank"
-            className="btn btn-dark ms-lg-3"
-            rel="noreferrer"
-          >
-            <FaGithub /> GitHub
-          </a>
-
         </div>
 
       </div>

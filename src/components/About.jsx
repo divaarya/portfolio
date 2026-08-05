@@ -12,48 +12,69 @@ function About() {
           </p>
         </div>
 
-        <div className="row align-items-center">
+        <div className="about-box">
 
-          <div className="col-lg-5 text-center">
+  <div className="row align-items-center">
 
-            <img
-              src={Foto}
-              alt="Diva Arya Prasetya Alamsyah Sujatmica"
-              className="img-fluid rounded-4 shadow"
-            />
+    <div className="col-lg-5 text-center">
 
-          </div>
+      <img
+        src={Foto}
+        alt="Diva Arya"
+        className="img-fluid"
+      />
 
-          <div className="col-lg-7">
+    </div>
 
-            <h3 className="fw-bold mb-3">
-              Backend Developer
-            </h3>
+    <div className="col-lg-7">
 
-            <p>
-              Halo! Saya <b>Diva Arya Prasetya Alamsyah Sujatmica</b>,
-              siswa <b>SMK Raden Umar Said</b> jurusan
-              <b> Rekayasa Perangkat Lunak (RPL)</b>.
-            </p>
+      <h3>Backend Developer</h3>
 
-            <p>
-              Saya memiliki minat dalam pengembangan aplikasi berbasis web,
-              khususnya pada pengembangan <b>backend</b> menggunakan
-              <b> PHP, Laravel, dan MySQL</b>. Saya senang membangun aplikasi
-              yang terstruktur, mudah dikembangkan, dan memiliki performa yang baik.
-            </p>
+      <p>
+        Halo! Saya <b>Diva Arya Prasetya Alamsyah Sujatmica</b>,
+        siswa <b>SMK Raden Umar Said</b> jurusan
+        <b> Rekayasa Perangkat Lunak (RPL)</b>.
+      </p>
 
-            <p>
-              Saya adalah pribadi yang disiplin, cepat belajar, mudah
-              beradaptasi, serta mampu bekerja sama dalam tim maupun secara
-              mandiri. Saya selalu berusaha meningkatkan kemampuan dengan
-              mempelajari teknologi baru dan mengerjakan berbagai proyek
-              pengembangan web.
-            </p>
+      <p>
+        Saya berfokus pada pengembangan aplikasi web,
+        khususnya di sisi backend menggunakan
+        <b> PHP, Laravel, dan MySQL</b>.
+        Saya menyukai proses membangun sistem yang
+        rapi, efisien, dan mudah dikembangkan.
+      </p>
 
-          </div>
+      <p>
+        Saya merupakan pribadi yang disiplin,
+        mudah beradaptasi, bertanggung jawab,
+        serta senang mempelajari teknologi baru
+        untuk meningkatkan kemampuan saya.
+      </p>
 
+      <div className="about-info">
+
+        <div className="about-item">
+          <h4>Domisili</h4>
+          <p>Kudus</p>
         </div>
+
+        <div className="about-item">
+          <h4>Sekolah</h4>
+          <p>SMK RUS</p>
+        </div>
+
+        <div className="about-item">
+          <h4>Fokus</h4>
+          <p>Backend</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
       </div>
     </section>

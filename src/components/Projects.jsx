@@ -1,86 +1,128 @@
 import Absensi from "../assets/img/absensi.jpeg";
-import Managemen from "../assets/img/managemen.jpeg";
+import Manajemen from "../assets/img/managemen.jpeg";
 import Kalkulator from "../assets/img/kalkulator.jpeg";
 
 function Projects() {
 
-  const projects = [
-    {
-      title: "Sistem Absensi Siswa",
-      description:
-        "Website untuk mengelola data kehadiran siswa, status absensi, dan rekap laporan secara efisien.",
-      tech: ["Laravel", "PHP", "MySQL"],
-      image: Absensi,
-    },
-    {
-      title: "Aplikasi Manajemen",
-      description:
-        "Website untuk mengelola data pengguna, laporan, dan proses administrasi.",
-      tech: ["Laravel", "PHP", "Bootstrap"],
-      image: Managemen,
-    },
-    {
-      title: "Kalkulator",
-      description:
-        "Aplikasi kalkulator sederhana dengan operasi penjumlahan, pengurangan, perkalian, dan pembagian.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      image: Kalkulator,
-    },
-  ];
+const projects=[
 
-  return (
-    <section id="projects" className="py-5 bg-light">
-      <div className="container">
+{
 
-        <div className="text-center mb-5">
-          <h2 className="fw-bold">My Projects</h2>
-          <p className="text-secondary">
-            Beberapa project yang pernah saya kerjakan.
-          </p>
-        </div>
+title:"Sistem Absensi",
 
-        <div className="row g-4">
+description:"Website untuk mengelola data kehadiran siswa, rekap absensi, serta laporan secara otomatis.",
 
-          {projects.map((project, index) => (
-            <div className="col-lg-4" key={index}>
+tech:["Laravel","PHP","MySQL"],
 
-              <div className="card project-card h-100">
+image:Absensi,
 
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="card-img-top"
-                />
+color:"project-blue"
 
-                <div className="card-body">
+},
 
-                  <h4>{project.title}</h4>
+{
 
-                  <p>{project.description}</p>
+title:"Manajemen",
 
-                  <div className="mb-3">
-                    {project.tech.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="badge bg-primary me-2"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+description:"Website untuk mengelola data pengguna, administrasi, dan laporan dengan tampilan yang sederhana.",
 
-                </div>
+tech:["Laravel","PHP","Bootstrap"],
 
-              </div>
+image:Manajemen,
 
-            </div>
-          ))}
+color:"project-green"
 
-        </div>
+},
 
-      </div>
-    </section>
-  );
+{
+
+title:"Kalkulator",
+
+description:"Aplikasi kalkulator sederhana menggunakan HTML, CSS, dan JavaScript.",
+
+tech:["HTML","CSS","JavaScript"],
+
+image:Kalkulator,
+
+color:"project-purple"
+
+}
+
+];
+
+return(
+
+<section id="projects">
+
+<div className="container">
+
+<div className="section-title">
+
+<h2>My Projects</h2>
+
+<p>
+Beberapa project yang pernah saya kerjakan.
+</p>
+
+</div>
+
+<div className="row g-4">
+
+{projects.map((project,index)=>(
+
+<div className="col-lg-4" key={index}>
+
+<div className="project-card">
+
+<div className={`project-header ${project.color}`}>
+
+<h4>{project.title}</h4>
+
+</div>
+
+<img
+src={project.image}
+alt={project.title}
+/>
+
+<div className="card-body">
+
+<p>
+
+{project.description}
+
+</p>
+
+<div className="project-tech">
+
+{project.tech.map((tech,i)=>(
+
+<span key={i}>
+
+{tech}
+
+</span>
+
+))}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
+
+);
+
 }
 
 export default Projects;
